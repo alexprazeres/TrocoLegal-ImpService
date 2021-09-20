@@ -1,0 +1,11 @@
+{
+	"name": "TrocoLegal_ImpService",
+	"description": "Aplicacao de Impressao",
+	"version": "1.1.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/horse": "^v2.0.14"
+	}
+}
