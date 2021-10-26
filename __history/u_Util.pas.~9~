@@ -1,0 +1,15 @@
+unit u_Util;
+
+interface
+
+function respostaJson(): String;
+
+implementation
+
+
+function respostaJson():String;
+
+begin
+  Result:= 'Okx';
+end;
+end.

@@ -1,0 +1,21 @@
+unit u_Util;
+interface
+
+USES System.JSON;
+
+
+function respostaJson(): String;
+
+implementation
+
+
+function respostaJson():String;
+var
+JSonValue : TJSonValue;
+data:String;
+begin
+  data:='{"sucesso":"sim"}';
+
+  Result:= 'Okx';
+end;
+end.

@@ -1,0 +1,22 @@
+unit u_Util;
+interface
+
+USES System.JSON;
+
+
+function respostaJson(): TJSonValue;
+
+implementation
+
+
+function respostaOk():TJSonValue;
+var
+JSonValue : TJSonValue;
+data:String;
+begin
+  data:='{"sucesso":"sim"}';
+  JsonValue := TJSonObject.ParseJSONValue(data);
+
+  Result:= JsonValue;
+end;
+end.

@@ -1,0 +1,169 @@
+object DM: TDM
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 206
+  Width = 307
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    ScreenCursor = gcrNone
+    Left = 48
+    Top = 24
+  end
+  object conexao: TFDConnection
+    Params.Strings = (
+      'User_Name=root'
+      'Password=flamengo'
+      'Server=localhost'
+      'Database=ava_meupedido'
+      'DriverID=MySQL')
+    FetchOptions.AssignedValues = [evCursorKind]
+    FetchOptions.CursorKind = ckDefault
+    ResourceOptions.AssignedValues = [rvBackup]
+    LoginPrompt = False
+    Left = 112
+    Top = 40
+  end
+  object cxStyleRepository1: TcxStyleRepository
+    Left = 184
+    Top = 24
+    PixelsPerInch = 96
+    object cabecalho: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clHighlight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object fundo: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clHighlight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object selecionado: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clHighlight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      TextColor = clWhite
+    end
+    object cxStyle1: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clWhite
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      TextColor = clRed
+    end
+    object cxStyle2: TcxStyle
+      AssignedValues = [svColor]
+      Color = clGray
+    end
+    object cxStyle3: TcxStyle
+      AssignedValues = [svColor, svTextColor]
+      Color = 9919021
+      TextColor = clWhite
+    end
+    object cxStyle4: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clHighlight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle5: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clSkyBlue
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsItalic]
+      TextColor = clDefault
+    end
+    object cxStyle6: TcxStyle
+      AssignedValues = [svColor]
+      Color = clCream
+    end
+    object cxStyle7: TcxStyle
+      AssignedValues = [svColor]
+      Color = 8421440
+    end
+    object cxStyle8: TcxStyle
+      AssignedValues = [svColor]
+      Color = clRed
+    end
+    object cxStyle9: TcxStyle
+      AssignedValues = [svColor, svTextColor]
+      Color = 15066597
+      TextColor = clBlack
+    end
+    object cxStyle10: TcxStyle
+      AssignedValues = [svColor, svFont]
+      Color = cl3DLight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+    end
+    object cxStyle11: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+    end
+    object cxStyle12: TcxStyle
+      AssignedValues = [svColor, svFont, svTextColor]
+      Color = clHighlight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      TextColor = clWhite
+    end
+    object cxStyle13: TcxStyle
+      AssignedValues = [svFont]
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+    end
+    object cxStyle14: TcxStyle
+    end
+    object cxStyle15: TcxStyle
+    end
+  end
+  object imprime: TACBrPosPrinter
+    ConfigBarras.MostrarCodigo = False
+    ConfigBarras.LarguraLinha = 0
+    ConfigBarras.Altura = 0
+    ConfigBarras.Margem = 0
+    ConfigQRCode.Tipo = 2
+    ConfigQRCode.LarguraModulo = 4
+    ConfigQRCode.ErrorLevel = 0
+    LinhasEntreCupons = 0
+    ControlePorta = True
+    Left = 128
+    Top = 93
+  end
+end
